@@ -32,6 +32,7 @@ mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
 mv ./rawdata ./data/raw
 # 3. List the contents of the ./data/raw directory
+$ ls
 event_log_1.log   event_log_36.log  ipaddr_8.txt       server_log_16.log  server_log_42.log   user_ipaddr_5.log  user_log_31.log
 event_log_10.log  event_log_37.log  ipaddr_9.txt       server_log_17.log  server_log_43.log   user_ipaddr_6.log  user_log_32.log
 event_log_11.log  event_log_38.log  misc_data.txt      server_log_18.log  server_log_44.log   user_ipaddr_7.log  user_log_33.log
@@ -62,7 +63,7 @@ event_log_33.log  ipaddr_5.txt      server_log_13.log  server_log_4.log   user_i
 event_log_34.log  ipaddr_6.txt      server_log_14.log  server_log_40.log  user_ipaddr_3.log   user_log_3.log
 event_log_35.log  ipaddr_7.txt      server_log_15.log  server_log_41.log  user_ipaddr_4.log   user_log_30.log
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
-
+$ mkdir -p ./processed/server_logs ./processed/user_logs ./processed/event_logs
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 
 # 6. Repeat the above step for user logs and event logs
